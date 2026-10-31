@@ -14,7 +14,7 @@
   <meta name="twitter:title" content="盒子里的小小画展">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Cpath fill='%23294aa0' d='m30 3 8 19 21-2-16 14 9 22-22-12L9 55l8-22L1 20l22 2z'/%3E%3C/svg%3E">
   <link rel="preload" href="assets/fonts/Schoolbell-Regular.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
   <a class="skip" href="#main">跳到画展内容</a>
@@ -65,7 +65,7 @@
       <svg class="wave" viewBox="0 0 1440 42" preserveAspectRatio="none" aria-hidden="true"><path d="M0 28Q120 4 240 22T480 20T720 18T960 22T1200 16T1440 23V42H0Z"/></svg>
       <div class="story wrap">
         <div class="story-heading"><span class="hand-note" aria-hidden="true">every mark matters</span><h2 id="story-title">画里的小小想象</h2><p class="editorial-line">每一道线，都有自己的方向。</p><svg class="scribble" viewBox="0 0 250 20" aria-hidden="true"><path d="M3 12Q92 0 246 10M16 17Q114 5 219 16"/></svg><p class="caption story-disclaimer">作品解读与故事为示例文案。</p></div>
-        <div class="story-text"><p class="art-description">蓝色的火箭，载着三个圆圆的小窗。黄色的光从纸上出发，像是下一秒，就要飞到那几颗歪歪扭扭的星星旁。</p><p class="secondary-text">不急着给它一个答案。你可以靠近一点，看看蜡笔留下的线条，也可以想象：这趟旅程会去哪里？</p><button class="text-button" id="story-toggle" type="button" aria-expanded="false" aria-controls="more-story">读一小段作品故事 <span aria-hidden="true">＋</span></button><div id="more-story" hidden><p>如果有一艘小小的火箭，我想带上喜欢的点心，去看看更远的天空。窗户可以是圆的，星星也不必画得一模一样。每一道线，都可以自由地长成自己的样子。</p><p class="caption">以上为课程演示创作的样例文字。小蓝为虚构示例署名，与原作作者无关；文字不代表原作者的经历、身份或创作意图。</p></div></div>
+        <div class="story-text"><p class="art-description">蓝色的火箭，载着三个圆圆的小窗。黄色的光从纸上出发，像是下一秒，就要飞到那几颗歪歪扭扭的星星旁。</p><p class="secondary-text">不急着给它一个答案。你可以靠近一点，看看蜡笔留下的线条，也可以想象：这趟旅程会去哪里？</p><div id="more-story" class="open-story"><h3>一段小小的出发故事</h3><p>如果有一艘小小的火箭，我想带上喜欢的点心，去看看更远的天空。窗户可以是圆的，星星也不必画得一模一样。每一道线，都可以自由地长成自己的样子。</p><p class="caption">以上为课程演示创作的样例文字。小蓝为虚构示例署名，与原作作者无关；文字不代表原作者的经历、身份或创作意图。</p></div></div>
       </div>
     </section>
     <section class="charity-section" id="about" aria-labelledby="charity-title">
@@ -83,6 +83,6 @@
   <dialog id="art-dialog" class="art-dialog" aria-labelledby="zoom-title"><div class="dialog-top"><h2 id="zoom-title">向星星出发 · 完整画作</h2><button class="icon-button" type="button" data-close aria-label="关闭放大画作"><svg class="icon" aria-hidden="true"><use href="#close"/></svg></button></div><div class="zoom-content"><img src="assets/artwork.jpg" alt="完整样例画作：蓝色火箭、圆形舷窗、黄色尾焰和蓝色星星" width="1200" height="1756"><div id="package-zoom" hidden></div></div><p class="caption">用户提供的样例作品；标题为演示命名。</p></dialog>
   <dialog id="info-dialog" class="info-dialog" aria-labelledby="info-title"><div class="dialog-top"><h2 id="info-title"></h2><button class="icon-button" type="button" data-close aria-label="关闭说明"><svg class="icon" aria-hidden="true"><use href="#close"/></svg></button></div><div id="info-body"></div><button class="button primary" type="button" data-close>我了解了</button></dialog>
   <div class="toast" id="toast" role="status" hidden></div>
-  <script src="app.js?v=4"></script>
-<dialog id="sleeve-dialog" class="sleeve-dialog" aria-label="完整封套展开图"><button type="button" class="button" id="close-sleeve">关闭</button><img src="assets/sleeve-full.svg" alt="完整封套展开设计"></dialog><script src="packaging.js"></script></body>
+  <script src="app.js?v=5"></script>
+<dialog id="sleeve-dialog" class="sleeve-dialog" aria-label="完整封套展开图"><button type="button" class="button" id="close-sleeve">关闭</button><img src="assets/sleeve-full.svg" alt="完整封套展开设计"></dialog><script src="packaging.js"></script><script src="motion.js"></script></body>
 </html>

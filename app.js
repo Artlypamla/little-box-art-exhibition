@@ -67,12 +67,6 @@
       if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom) dialog.close();
     });
   });
-  document.querySelector('#story-toggle').addEventListener('click',function(){
-    const expanded=this.getAttribute('aria-expanded')==='true';
-    this.setAttribute('aria-expanded',String(!expanded));
-    document.querySelector('#more-story').hidden=expanded;
-    this.innerHTML=expanded?'读一小段作品故事 <span aria-hidden="true">＋</span>':'收起作品故事 <span aria-hidden="true">−</span>';
-  });
   document.querySelector('#finish').addEventListener('click',function(){
     if(this.dataset.completed==='true') {
       document.querySelector('#gallery').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
