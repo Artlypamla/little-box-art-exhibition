@@ -42,7 +42,7 @@
     const pack = document.querySelector('#package-zoom');
     art.hidden = isPackage;
     pack.hidden = !isPackage;
-    if (isPackage && !pack.firstElementChild) pack.appendChild(stage.querySelector('.mini-gift').cloneNode(true));
+    if (isPackage && !pack.firstElementChild) pack.appendChild(stage.querySelector('.product-photo').cloneNode(true));
     showDialog(artDialog,stage);
   });
   const content = {

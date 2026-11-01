@@ -1,4 +1,12 @@
 (() => {
+  // A shared/reloaded gallery URL still enters through the full exhibition header.
+  // In-page gallery links keep their normal behavior after this initial navigation.
+  if (location.hash === '#gallery') {
+    history.replaceState(history.state, '', location.pathname + location.search);
+    const showEntrance = () => requestAnimationFrame(() => requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: 'instant' })));
+    if (document.readyState === 'complete') showEntrance();
+    else window.addEventListener('load', showEntrance, { once: true });
+  }
   const preference = matchMedia('(prefers-reduced-motion: reduce)');
   const blocks = [...document.querySelectorAll('.story, .charity-heading, .gift-section, .support-flow, .understanding-inner, .ending')];
   let observer;
